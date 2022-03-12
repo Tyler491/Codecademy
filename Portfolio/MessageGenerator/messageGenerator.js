@@ -47,14 +47,15 @@ const messageTemplate ={
 
 
 //A message factory so you can easily create multiple messages
-function messageFactory(intro, middle, end){
+function messageFactory(beginning, middle, end){
     return {
-        _intro:intro,
+        _beginning:beginning,
         _middle:middle,
         _end:end,
 
+        //A method to print of the whole message
         print(){
-            console.log(`${this._intro} ${this._middle} ${this._end}`);
+            console.log(`${this._beginning} ${this._middle} ${this._end}`);
         }
     }
 };
