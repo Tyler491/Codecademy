@@ -62,4 +62,4 @@ function messageFactory(beginning, middle, end){
 
 //Creating a message and printing it off
 message = messageFactory(messageTemplate.greetings, messageTemplate.introductions, messageTemplate.compliment); 
-message.print();
+message.print(); 
